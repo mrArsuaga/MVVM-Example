@@ -10,7 +10,11 @@ import Foundation
 
 final class ObservableObject<T> {
     
-    var value: T?
+    var value: T? {
+        didSet {
+            listener?(value)
+        }
+    }
     
     private var listener: ((T?) -> Void)?
     
@@ -22,4 +26,6 @@ final class ObservableObject<T> {
         listener(value)
         self.listener = listener
     }
+    
+    
 }
