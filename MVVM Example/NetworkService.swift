@@ -27,4 +27,8 @@ final class NetworkService {
             }
         }
     }
+    
+    func getLoggedInUser() -> User? {
+        return user
+    }
 }

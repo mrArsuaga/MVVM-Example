@@ -10,22 +10,21 @@ import UIKit
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var welcomeLabel: UILabel!
+    
+    private let viewModel = HomeViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupBinders()
+        viewModel.getLoggedInUser()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupBinders() {
+        viewModel.welcomeMessage.bind { [weak self] message in
+            self?.welcomeLabel.text = message
+        }
     }
-    */
 
 }
