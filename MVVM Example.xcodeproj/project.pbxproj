@@ -11,6 +11,7 @@
 		C32B86B428580A5A001FE1D4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B86B328580A5A001FE1D4 /* LoginViewModel.swift */; };
 		C32B86B728580B0E001FE1D4 /* ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B86B628580B0E001FE1D4 /* ObservableObject.swift */; };
 		C32B86B928580D4E001FE1D4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B86B828580D4E001FE1D4 /* NetworkService.swift */; };
+		C32B86BD28581329001FE1D4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B86BC28581329001FE1D4 /* HomeViewModel.swift */; };
 		C3E472E42857965E00F16DA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E472E32857965E00F16DA6 /* AppDelegate.swift */; };
 		C3E472E62857965E00F16DA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E472E52857965E00F16DA6 /* SceneDelegate.swift */; };
 		C3E472E82857965E00F16DA6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E472E72857965E00F16DA6 /* LoginViewController.swift */; };
@@ -25,6 +26,7 @@
 		C32B86B328580A5A001FE1D4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C32B86B628580B0E001FE1D4 /* ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObject.swift; sourceTree = "<group>"; };
 		C32B86B828580D4E001FE1D4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C32B86BC28581329001FE1D4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C3E472E02857965E00F16DA6 /* MVVM Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E472E32857965E00F16DA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3E472E52857965E00F16DA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,15 @@
 			path = LoginView;
 			sourceTree = "<group>";
 		};
+		C32B86BB2858131F001FE1D4 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				C3E472F72857974400F16DA6 /* HomeViewController.swift */,
+				C32B86BC28581329001FE1D4 /* HomeViewModel.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
 		C3E472D72857965E00F16DA6 = {
 			isa = PBXGroup;
 			children = (
@@ -79,7 +90,7 @@
 				C3E472E52857965E00F16DA6 /* SceneDelegate.swift */,
 				C3E472E92857965E00F16DA6 /* Main.storyboard */,
 				C32B86B528580A64001FE1D4 /* LoginView */,
-				C3E472F72857974400F16DA6 /* HomeViewController.swift */,
+				C32B86BB2858131F001FE1D4 /* HomeView */,
 				C3E472EC2857966100F16DA6 /* Assets.xcassets */,
 				C3E472EE2857966100F16DA6 /* LaunchScreen.storyboard */,
 				C3E472F12857966100F16DA6 /* Info.plist */,
@@ -162,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3E472E82857965E00F16DA6 /* LoginViewController.swift in Sources */,
+				C32B86BD28581329001FE1D4 /* HomeViewModel.swift in Sources */,
 				C3E472E42857965E00F16DA6 /* AppDelegate.swift in Sources */,
 				C32B86B928580D4E001FE1D4 /* NetworkService.swift in Sources */,
 				C32B86B428580A5A001FE1D4 /* LoginViewModel.swift in Sources */,
