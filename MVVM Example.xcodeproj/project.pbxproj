@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C374818F285AA2DD002A0A84 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C374818E285AA2DD002A0A84 /* User.swift */; };
+		C3748192285AA328002A0A84 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3748191285AA328002A0A84 /* LoginViewModel.swift */; };
+		C3748194285AA36F002A0A84 /* ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3748193285AA36F002A0A84 /* ObservableObject.swift */; };
+		C3748196285AA49A002A0A84 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3748195285AA49A002A0A84 /* NetworkService.swift */; };
+		C3748199285AA89F002A0A84 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3748198285AA89F002A0A84 /* HomeViewModel.swift */; };
+		C37481CD285BB660002A0A84 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37481CC285BB660002A0A84 /* Credentials.swift */; };
 		C3E472E42857965E00F16DA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E472E32857965E00F16DA6 /* AppDelegate.swift */; };
 		C3E472E62857965E00F16DA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E472E52857965E00F16DA6 /* SceneDelegate.swift */; };
 		C3E472E82857965E00F16DA6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E472E72857965E00F16DA6 /* LoginViewController.swift */; };
@@ -17,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C374818E285AA2DD002A0A84 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C3748191285AA328002A0A84 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C3748193285AA36F002A0A84 /* ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObject.swift; sourceTree = "<group>"; };
+		C3748195285AA49A002A0A84 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C3748198285AA89F002A0A84 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C37481CC285BB660002A0A84 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		C3E472E02857965E00F16DA6 /* MVVM Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E472E32857965E00F16DA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3E472E52857965E00F16DA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +51,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C3748190285AA315002A0A84 /* Login View */ = {
+			isa = PBXGroup;
+			children = (
+				C3E472E72857965E00F16DA6 /* LoginViewController.swift */,
+				C3748191285AA328002A0A84 /* LoginViewModel.swift */,
+			);
+			path = "Login View";
+			sourceTree = "<group>";
+		};
+		C3748197285AA88B002A0A84 /* Home View */ = {
+			isa = PBXGroup;
+			children = (
+				C3E472F72857974400F16DA6 /* HomeViewController.swift */,
+				C3748198285AA89F002A0A84 /* HomeViewModel.swift */,
+			);
+			path = "Home View";
+			sourceTree = "<group>";
+		};
 		C3E472D72857965E00F16DA6 = {
 			isa = PBXGroup;
 			children = (
@@ -61,11 +91,15 @@
 				C3E472E32857965E00F16DA6 /* AppDelegate.swift */,
 				C3E472E52857965E00F16DA6 /* SceneDelegate.swift */,
 				C3E472E92857965E00F16DA6 /* Main.storyboard */,
-				C3E472E72857965E00F16DA6 /* LoginViewController.swift */,
-				C3E472F72857974400F16DA6 /* HomeViewController.swift */,
+				C3748190285AA315002A0A84 /* Login View */,
+				C3748197285AA88B002A0A84 /* Home View */,
 				C3E472EC2857966100F16DA6 /* Assets.xcassets */,
 				C3E472EE2857966100F16DA6 /* LaunchScreen.storyboard */,
 				C3E472F12857966100F16DA6 /* Info.plist */,
+				C374818E285AA2DD002A0A84 /* User.swift */,
+				C3748193285AA36F002A0A84 /* ObservableObject.swift */,
+				C3748195285AA49A002A0A84 /* NetworkService.swift */,
+				C37481CC285BB660002A0A84 /* Credentials.swift */,
 			);
 			path = "MVVM Example";
 			sourceTree = "<group>";
@@ -142,8 +176,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3E472E82857965E00F16DA6 /* LoginViewController.swift in Sources */,
+				C3748199285AA89F002A0A84 /* HomeViewModel.swift in Sources */,
+				C37481CD285BB660002A0A84 /* Credentials.swift in Sources */,
 				C3E472E42857965E00F16DA6 /* AppDelegate.swift in Sources */,
+				C3748196285AA49A002A0A84 /* NetworkService.swift in Sources */,
+				C3748192285AA328002A0A84 /* LoginViewModel.swift in Sources */,
 				C3E472E62857965E00F16DA6 /* SceneDelegate.swift in Sources */,
+				C3748194285AA36F002A0A84 /* ObservableObject.swift in Sources */,
+				C374818F285AA2DD002A0A84 /* User.swift in Sources */,
 				C3E472F82857974400F16DA6 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
